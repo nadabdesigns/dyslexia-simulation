@@ -5,7 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script src="main.js" defer></script>
+	<script src="../main.js" defer></script>
+	<style>
+		.no-rating{
+			opacity: 0.5;
+
+		}
+	</style>
 	<link rel="stylesheet" href="/Pages/simulation.css">
 	<link rel="stylesheet" href="https://use.typekit.net/ioi6wkx.css">
 
@@ -32,14 +38,21 @@
 
 		<div class="topDiv">
 			<p class="pWhite">Write your text below</p>
-			<h1>Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+			<form> 
+				<!-- Imputs don't have dnding tags -->
+				<!-- add int the attribute called text -->
+				 <!--  -->
+				<input type="text" class="input">
+
+		
+			<h1 class="output">Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
 				aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
 				velit
 				interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
 				vulputate
 				libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing
 				elit.
-				Nunc vulpu</h1>
+				Nunc vulpu</h1></form>
 
 		</div>
 		<div class="bottomDiv">
