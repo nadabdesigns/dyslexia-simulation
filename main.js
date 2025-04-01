@@ -29,8 +29,46 @@ const output = document.querySelector ('.output')
 input.addEventListener("input", updateValue);
 // (e)is the event and we're grabbing the text and spiting it out (later)
 function updateValue(e) {
+	// creating a varbile for change
+	let letterchage = e.target.value;
+
+	// creating an empty string 
+
+	let textReplace = "";
+	for (let i = 0; i < letterchage; i++) {
+
+		
+
+		if (letterchage[i]=="f") { textReplace = textReplace + 't';
+
+		  
+		}//  block of code to be executed if the condition is false
+
+		else if (letterchage[i]=="t"){ textReplace = textReplace + 'f';
+
+		  
+		}
+			
+		  else {textReplace = textReplace + letterchage[i];
+			
+		  }
+		// t
+		// f
+		// s
+		// c
+		
+		
+
+
+		
+	  }
+
+
+
 	// goining into the log and seeing what the text content is
-  output.innerHTML = e.target.value;}
+  output.innerHTML = textReplace}
+
+
 
 // adding in a const and query selector for input and output
 // add event lisiter that 
