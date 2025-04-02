@@ -35,23 +35,36 @@ function updateValue(e) {
 	// creating an empty string 
 
 	let textReplace = "";
-	for (let i = 0; i < letterchage; i++) {
+	for (let i = 0; i < letterchage.length; i++) {
 
 		
 
-		if (letterchage[i]=="f") { textReplace = textReplace + 't';
+		if (letterchage[i]=="f") 
+		{ 
+			if(Math.random() < .5)
+			{
+				textReplace = textReplace + 't';
+			}
+			else{
+				textReplace = textReplace + letterchage[i];	
+			}
+			
+
+			// dectection fo rt and f and check value for a coin toss
+			// geta a value for 0 and 1 and see if it's a value for .5 
 
 		  
 		}//  block of code to be executed if the condition is false
 
-		else if (letterchage[i]=="t"){ textReplace = textReplace + 'f';
-
-		  
-		}
+		// else if (letterchage[i]=="t")
+		// { 
+		// 	textReplace = textReplace + 'f';
+		// }
 			
-		  else {textReplace = textReplace + letterchage[i];
-			
-		  }
+		// else 
+		// {
+		// 	textReplace = textReplace + letterchage[i];	
+		// }
 		// t
 		// f
 		// s
