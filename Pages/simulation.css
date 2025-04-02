@@ -44,9 +44,9 @@ h2 {
 }
 
 .leftDiv {
-	background-color: bisque;
-	width: 80vw;
-	padding: 3vw;
+	background-color: white;
+	 /* width: 80vw; */
+	 padding: 3vw; 
 }
 
 .rightDiv {
@@ -82,6 +82,8 @@ h2 {
 	flex: 1 0 0;
 	align-self: stretch;
 	color: var(--Black);
+	border: 2px dotted black;
+	padding: 3vw; 
 }
 
 
@@ -98,9 +100,14 @@ h2 {
 	flex-direction: column;
 	
 	}
-	.leftDiv{
+	/* .leftDiv{
 		width: 90%;
-	}
+	} */
+	h1 {
+		
+		font-size: 20px;
+		
+	  }
 }
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
