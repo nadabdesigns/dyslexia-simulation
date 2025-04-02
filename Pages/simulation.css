@@ -111,7 +111,13 @@ h2 {
 }
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+	h1 {
+		
+		font-size: 14px;
+		
+	  }
+}
 
 
 
@@ -130,7 +136,7 @@ h2 {
 		justify-content: center;
 	}
 
-	.firstdiv {}
+	
 
 }
 
