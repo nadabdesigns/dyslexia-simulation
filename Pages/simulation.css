@@ -85,6 +85,9 @@ h2 {
 	border: 2px dotted black;
 	
 }
+.input{
+	mix-blend-mode: difference;
+}
 
 
 

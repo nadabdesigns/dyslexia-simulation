@@ -33,6 +33,7 @@ function updateValue(e) {
 	let letterchage = e.target.value;
 
 	// creating an empty string 
+	// 
 
 	let textReplace = "";
 	for (let i = 0; i < letterchage.length; i++) {
@@ -61,10 +62,10 @@ function updateValue(e) {
 		// 	textReplace = textReplace + 'f';
 		// }
 			
-		// else 
-		// {
-		// 	textReplace = textReplace + letterchage[i];	
-		// }
+		else 
+		{
+			textReplace = textReplace + letterchage[i];	
+		}
 		// t
 		// f
 		// s
