@@ -4,16 +4,16 @@
 // assing printed out click
 
 // adding a class
-document.querySelector ('#hide-visited').onclick = () => {
-	console.log('click')
-	document.querySelector('#pizza-places').classList.add('hide-visited')
-}
-//removing a class
-document.querySelector ('#hide-visited').onclick = () => {
-	console.log('click')
-	document.querySelector('#pizza-places').classList.remove('hide-visited')
-}
-// went to coding tutor Viyan Poonamallee showed me how to do this with a text string
+// document.querySelector ('#hide-visited').onclick = () => {
+// 	console.log('click')
+// 	document.querySelector('#pizza-places').classList.add('hide-visited')
+// }
+// //removing a class
+// document.querySelector ('#hide-visited').onclick = () => {
+// 	console.log('click')
+// 	document.querySelector('#pizza-places').classList.remove('hide-visited')
+// }
+// // went to coding tutor Viyan Poonamallee showed me how to do this with a text string
 
 // structure for input
 // giv the imput
