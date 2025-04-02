@@ -6,7 +6,6 @@
 	--Black: #1E1919;
 	--white: #FFFEFA;
 
-
 }
 
 body {
@@ -15,9 +14,17 @@ body {
 	background-color: blue;
 
 }
+input{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	height: 300px;
+
+
+}
+
 
 h1 {
-
 
 	font-family: "darkmode-on", sans-serif;
 	font-size: var(--h2);
@@ -26,18 +33,20 @@ h1 {
 	line-height: normal;
 	text-transform: capitalize;
 	color: var(--white);
-	
+
 }
 
 h2 {
 	font-family: "darkmode-on", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	
 }
 
 .leftDiv {
 	background-color: bisque;
 	width: 80vw;
+	padding: 3vw;
 }
 
 .rightDiv {
@@ -82,7 +91,17 @@ h2 {
 /* MEDIA QUERIES */
 
 /* ALL RULES THAT APPLY WHEN SCREEN IS SMALLER THAN 1050 PX */
-@media screen and (max-width: 1050px) {}
+@media screen and (max-width: 1050px) {
+	body {
+		display: flex;
+		
+	flex-direction: column;
+	
+	}
+	.leftDiv{
+		width: 90%;
+	}
+}
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {}
