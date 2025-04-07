@@ -28,6 +28,8 @@ const output = document.querySelector ('.output')
 
 let ftSlider = document.getElementById("slider-ft")
 
+let scSlider = document.getElementById("slider-sc")
+
 // targeting varbile just made for the event lister input and we are chaanging that data to  
 input.addEventListener("input", updateValue);
 // (e)is the event and we're grabbing the text and spiting it out (later)
@@ -42,16 +44,22 @@ function updateValue(e) {
 	for (let i = 0; i < letterchage.length; i++) {
 
 		
-
-		if (letterchage[i]=="f") 
+		
+		if (Math.random() < ftSlider.value) 
 		{ 
-			if(Math.random() < ftSlider.value)
+			if(letterchage[i]=="f")
 			{
 				textReplace = textReplace + 't';
+			}
+			// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
+			else if(letterchage[i]=="t") {
+				textReplace = textReplace + 'f';
+
 			}
 			else{
 				textReplace = textReplace + letterchage[i];	
 			}
+			
 			
 
 			console.log(ftSlider.value)
@@ -59,7 +67,31 @@ function updateValue(e) {
 			// geta a value for 0 and 1 and see if it's a value for .5 
 
 		  
-		}//  block of code to be executed if the condition is false
+		}
+		// slider for s and c
+		else if(Math.random() < scSlider.value) 
+			{ 
+				if(letterchage[i]=="s")
+				{
+					textReplace = textReplace + 'c';
+				}
+				// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
+				else if(letterchage[i]=="c") {
+					textReplace = textReplace + 's';
+	
+				}
+				else{
+					textReplace = textReplace + letterchage[i];	
+				}
+				
+				
+	
+				console.log(scSlider.value)
+				// dectection fo rt and f and check value for a coin toss
+				// geta a value for 0 and 1 and see if it's a value for .5 
+			  
+			}
+		//  block of code to be executed if the condition is false
 
 		// make a slider and choose probablity from .0 to .9
 
@@ -67,7 +99,7 @@ function updateValue(e) {
 		// { 
 		// 	textReplace = textReplace + 'f';
 		// }
-			
+			// adding on a regualar caracter if mant rondome isnt true
 		else 
 		{
 			textReplace = textReplace + letterchage[i];	
