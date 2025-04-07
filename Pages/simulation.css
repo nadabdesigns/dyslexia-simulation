@@ -38,7 +38,9 @@ form{
     font-weight: 700;
     /* line-height: normal; */
     text-transform: capitalize;
-	background-color: #d3d3d3;
+	background-color: #180606;
+	border-radius: 5px;
+	border: 1px solid #d0ff00;
 
 
 
@@ -56,6 +58,7 @@ h1 {
 	font-weight: 700;
 	line-height: normal;
 	text-transform: capitalize;
+	
 	/* color: var(--white); */
 
 }
@@ -64,6 +67,9 @@ h2 {
 	font-family: "darkmode-on", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	line-height: 200%;
+
+	
 	
 }
 /* the left div */
@@ -71,6 +77,9 @@ h2 {
 	background-color: white;
 	 width: 20vw;
 	 padding: 3vw; 
+	 display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 /* The slider */
 #slider-ft, #slider-sc, #slider-river {
@@ -86,7 +95,19 @@ h2 {
 .rightDiv {
 	background-color: rgb(30, 138, 177);
 	width: 80vw;
+	height: 100%;
 	
+}
+p{
+	color: #1E1919;
+
+font-family: Darkmode;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+
 }
 
 .topDiv {
