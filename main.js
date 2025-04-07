@@ -30,6 +30,8 @@ let ftSlider = document.getElementById("slider-ft")
 
 let scSlider = document.getElementById("slider-sc")
 
+let riverSlider = document.getElementById("slider-river")
+
 // targeting varbile just made for the event lister input and we are chaanging that data to  
 input.addEventListener("input", updateValue);
 // (e)is the event and we're grabbing the text and spiting it out (later)
@@ -62,7 +64,7 @@ function updateValue(e) {
 			
 			
 
-			console.log(ftSlider.value)
+			
 			// dectection fo rt and f and check value for a coin toss
 			// geta a value for 0 and 1 and see if it's a value for .5 
 
@@ -86,11 +88,35 @@ function updateValue(e) {
 				
 				
 	
-				console.log(scSlider.value)
+				
 				// dectection fo rt and f and check value for a coin toss
 				// geta a value for 0 and 1 and see if it's a value for .5 
 			  
 			}
+			else if(Math.random() < riverSlider.value) 
+				{ 
+					if(letterchage[i]==" ")
+					{
+						console.log('HEllo')
+						textReplace = textReplace + '  ';
+
+					}
+					// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
+					else if(letterchage[i]=="  ") {
+						textReplace = textReplace + '   ';
+		
+					}
+					else{
+						textReplace = textReplace + letterchage[i];	
+					}
+					
+					
+		
+					console.log(riverSlider.value)
+					// dectection fo rt and f and check value for a coin toss
+					// geta a value for 0 and 1 and see if it's a value for .5 
+				  
+				}
 		//  block of code to be executed if the condition is false
 
 		// make a slider and choose probablity from .0 to .9
