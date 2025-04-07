@@ -1,3 +1,7 @@
+html{
+	width: 100%;
+	height: 100%;
+}
 :root {
 
 	--h1: 64px;
@@ -10,17 +14,28 @@
 
 body {
 	display: flex;
+	height: 100%;
 	
 	background-color: blue;
 
 }
-input{
+.input{
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	height: 300px;
+	/* height: 300px; */
+	color: var(--white);
+	font-family: "darkmode-on", sans-serif;
+    font-size: var(--h2);
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: normal; */
+    text-transform: capitalize;
 
 
+}
+output{
+	color: black;
 }
 
 
@@ -32,7 +47,7 @@ h1 {
 	font-weight: 700;
 	line-height: normal;
 	text-transform: capitalize;
-	color: var(--white);
+	/* color: var(--white); */
 
 }
 
@@ -42,15 +57,26 @@ h2 {
 	font-style: normal;
 	
 }
-
+/* the left div */
 .leftDiv {
 	background-color: white;
-	 /* width: 80vw; */
+	 width: 20vw;
 	 padding: 3vw; 
+}
+/* The slider */
+#slider-ft{
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+	border-radius: 20px;
 }
 
 .rightDiv {
 	background-color: rgb(30, 138, 177);
+	width: 80vw;
 	
 }
 
@@ -63,15 +89,8 @@ h2 {
 	gap: 133px;
 	flex: 1 0 0;
 	align-self: stretch;
+	height: 50%;
 }
-/* changing the colors */
-.pWhite{
-	color: var(--white);
-}
-.pBlack{
-	color: var(--Black);
-}
-
 .bottomDiv {
 	background-color: var(--white);
 	display: flex;
@@ -83,11 +102,30 @@ h2 {
 	align-self: stretch;
 	color: var(--Black);
 	border: 2px dotted black;
+	height: 50%;
 	
 }
-.input{
-	mix-blend-mode: difference;
+
+/* changing font styles */
+h3{
+	font-family: Darkmode;
+font-size: var(--h2);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
 }
+/* changing the colors */
+.h3White{color: var(--white);
+
+}
+.h3black{color: var(--Black);
+
+	}
+
+
+
+
 
 
 

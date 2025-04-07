@@ -25,6 +25,9 @@ const input = document.querySelector ('.input')
 // creating a vrible that triggers querseltor for the class output
 const output = document.querySelector ('.output')
 
+
+let ftSlider = document.getElementById("slider-ft")
+
 // targeting varbile just made for the event lister input and we are chaanging that data to  
 input.addEventListener("input", updateValue);
 // (e)is the event and we're grabbing the text and spiting it out (later)
@@ -42,7 +45,7 @@ function updateValue(e) {
 
 		if (letterchage[i]=="f") 
 		{ 
-			if(Math.random() < .5)
+			if(Math.random() < ftSlider.value)
 			{
 				textReplace = textReplace + 't';
 			}
@@ -51,11 +54,14 @@ function updateValue(e) {
 			}
 			
 
+			console.log(ftSlider.value)
 			// dectection fo rt and f and check value for a coin toss
 			// geta a value for 0 and 1 and see if it's a value for .5 
 
 		  
 		}//  block of code to be executed if the condition is false
+
+		// make a slider and choose probablity from .0 to .9
 
 		// else if (letterchage[i]=="t")
 		// { 
@@ -70,6 +76,7 @@ function updateValue(e) {
 		// f
 		// s
 		// c
+		// 
 		
 		
 
