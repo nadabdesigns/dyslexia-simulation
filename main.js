@@ -101,11 +101,7 @@ function updateValue(e) {
 						textReplace = textReplace + '  ';
 
 					}
-					// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
-					else if(letterchage[i]=="  ") {
-						textReplace = textReplace + '   ';
-		
-					}
+				
 					else{
 						textReplace = textReplace + letterchage[i];	
 					}
