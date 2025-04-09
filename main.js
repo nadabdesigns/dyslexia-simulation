@@ -89,10 +89,11 @@ function updateValue(e) {
 			// geta a value for 0 and 1 and see if it's a value for .5 
 
 		}
+		// 
 		else if (Math.random() < riverSlider.value) {
 			if (letterchage[i] == ` `) {
 				console.log('HEllo')
-				textReplace = textReplace + `\t`;
+				textReplace = textReplace + `&nbsp;&nbsp;&nbsp;`;
 
 			}
 
@@ -123,11 +124,7 @@ function updateValue(e) {
 		// f
 		// s
 		// c
-		// 
-
-
-
-
+	
 
 	}
 
