@@ -21,9 +21,9 @@
 
 // const you cant redeclare
 // creating a vrible that triggers querseltor for the class input
-const input = document.querySelector ('.input')
+const input = document.querySelector('.input')
 // creating a vrible that triggers querseltor for the class output
-const output = document.querySelector ('.output')
+const output = document.querySelector('.output')
 
 
 let ftSlider = document.getElementById("slider-ft")
@@ -45,74 +45,68 @@ function updateValue(e) {
 	let textReplace = "";
 	for (let i = 0; i < letterchage.length; i++) {
 
-		
-		
-		if (Math.random() < ftSlider.value) 
-		{ 
-			if(letterchage[i]=="f")
-			{
+
+
+		if (Math.random() < ftSlider.value) {
+			if (letterchage[i] == "f") {
 				textReplace = textReplace + 't';
 			}
 			// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
-			else if(letterchage[i]=="t") {
+			else if (letterchage[i] == "t") {
 				textReplace = textReplace + 'f';
 
 			}
-			else{
-				textReplace = textReplace + letterchage[i];	
+			else {
+				textReplace = textReplace + letterchage[i];
 			}
-			
-			
 
-			
+
+
+
 			// dectection fo rt and f and check value for a coin toss
 			// geta a value for 0 and 1 and see if it's a value for .5 
 
-		  
+
 		}
 		// slider for s and c
-		else if(Math.random() < scSlider.value) 
-			{ 
-				if(letterchage[i]=="s")
-				{
-					textReplace = textReplace + 'c';
-				}
-				// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
-				else if(letterchage[i]=="c") {
-					textReplace = textReplace + 's';
-	
-				}
-				else{
-					textReplace = textReplace + letterchage[i];	
-				}
-				
-				
-	
-				
-				// dectection fo rt and f and check value for a coin toss
-				// geta a value for 0 and 1 and see if it's a value for .5 
-			  
+		else if (Math.random() < scSlider.value) {
+			if (letterchage[i] == "s") {
+				textReplace = textReplace + 'c';
 			}
-			else if(Math.random() < riverSlider.value) 
-				{ 
-					if(letterchage[i]==` `)
-					{
-						console.log('HEllo')
-						textReplace = textReplace + `\t`;
+			// we want to have an else if that will if the first if is untrue and if it's true it wont run at all
+			else if (letterchage[i] == "c") {
+				textReplace = textReplace + 's';
 
-					}
-				
-					else{
-						textReplace = textReplace + letterchage[i];	
-					}
-					
-					
-		
-					console.log(riverSlider.value)
-					// dectection fo rt and f and check value for a coin toss
-					// geta a value for 0 and 1 and see if it's a value for .5 
-				  
-				}
+			}
+			else {
+				textReplace = textReplace + letterchage[i];
+			}
+
+
+
+
+			// dectection fo rt and f and check value for a coin toss
+			// geta a value for 0 and 1 and see if it's a value for .5 
+
+		}
+		else if (Math.random() < riverSlider.value) {
+			if (letterchage[i] == ` `) {
+				console.log('HEllo')
+				textReplace = textReplace + `\t`;
+
+			}
+
+			else {
+				textReplace = textReplace + letterchage[i];
+			}
+
+
+
+			console.log(riverSlider.value)
+			// dectection fo rt and f and check value for a coin toss
+			// geta a value for 0 and 1 and see if it's a value for .5 
+
+		}
 		//  block of code to be executed if the condition is false
 
 		// make a slider and choose probablity from .0 to .9
@@ -121,27 +115,27 @@ function updateValue(e) {
 		// { 
 		// 	textReplace = textReplace + 'f';
 		// }
-			// adding on a regualar caracter if mant rondome isnt true
-		else 
-		{
-			textReplace = textReplace + letterchage[i];	
+		// adding on a regualar caracter if mant rondome isnt true
+		else {
+			textReplace = textReplace + letterchage[i];
 		}
 		// t
 		// f
 		// s
 		// c
 		// 
-		
-		
 
 
-		
-	  }
+
+
+
+	}
 
 
 
 	// goining into the log and seeing what the text content is
-  output.innerHTML = textReplace}
+	output.innerHTML = textReplace
+}
 
 
 

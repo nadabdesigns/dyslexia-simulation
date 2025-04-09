@@ -17,6 +17,31 @@ p {
 body{
 	padding: 64px;
 }
+button {
+
+	display: flex;
+	height: 50px;
+	padding: 15px;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	align-self: stretch;
+	border-radius: 78px;
+	border: 2px solid #1E1919;
+	color: var(--white);
+
+	background: #1E1919;
+
+
+	font-family: Darkmode;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+	width: 100%;
+}
+
 #slider-ft{
 	background-color: aqua;
 }
