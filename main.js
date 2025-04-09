@@ -93,7 +93,7 @@ function updateValue(e) {
 		else if (Math.random() < riverSlider.value) {
 			if (letterchage[i] == ` `) {
 				console.log('HEllo')
-				textReplace = textReplace + `&nbsp;&nbsp;&nbsp;`;
+				textReplace = textReplace + `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
 
 			}
 
