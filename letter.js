@@ -1,18 +1,18 @@
 // require https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js
-// 
+// This is where i'm adding in my matter js to make the shapes bonce aroung I cross referenced to matter.js documetation about bodies. I stared with this base https://github.com/liabru/matter-js/wiki/Getting-started and then crossreferenced  few tutorials and some pre built p5js here are the sorces i used: this one is the template for I started with /https://github.com/liabru/matter-js/wiki/Getting-started then i used this tutorial to undersatand how to get text inside the bodies https://www.youtube.com/watch?v=s0BnHeBX0Bw
 var Engine = Matter.Engine,
-    Render = Matter.Render,
-    Runner = Matter.Runner,
-    Bodies = Matter.Bodies,
-    Composite = Matter.Composite;
+	Render = Matter.Render,
+	Runner = Matter.Runner,
+	Bodies = Matter.Bodies,
+	Composite = Matter.Composite;
 
-	// creat engine
-	var engine = Engine.create();
+// creat engine
+var engine = Engine.create();
 
-	// create a renderer and asigning it to body
+// create a renderer and asigning it to body
 var render = Render.create({
-    element: document.body,
-    engine: engine
+	element: document.body,
+	engine: engine
 });
 
 // create two boxes and a ground first x then y then width and height
@@ -26,7 +26,7 @@ var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
 
 // add all of the bodies to the world
-Composite.add(engine.world, [boxA, boxB,boxC, ground]);
+Composite.add(engine.world, [boxA, boxB, boxC, ground]);
 
 // run the renderer
 Render.run(render);
@@ -46,32 +46,32 @@ let x = 20;
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background("black");
+	createCanvas(windowWidth, windowHeight);
+	background("black");
 }
 
 function draw() {
-  // numerically integrate the velocity and position
-  velocity += gravity;
-  y += velocity;
+	// numerically integrate the velocity and position
+	velocity += gravity;
+	y += velocity;
 
-  // bounce off the bottom
-  if (y > height) {
-    y = height;
-    velocity = -abs(velocity)+18;
-  }
+	// bounce off the bottom
+	if (y > height) {
+		y = height;
+		velocity = -abs(velocity) + 18;
+	}
 
-  background("black");
-  fill("white");
-  noStroke();
-  textSize(60);
-  text("D",x,y);
-    text("D",2*x,y);
-    text("Y",3*x,y);
-    text("S",4*x,y);
-    text("L",5*x,y);
-  text("E",6*x,y);
-   text("X",7*x,y);
-   text("I",8*x,y);
-  text("A",9*x,y);
+	background("black");
+	fill("white");
+	noStroke();
+	textSize(60);
+	text("D", x, y);
+	text("D", 2 * x, y);
+	text("Y", 3 * x, y);
+	text("S", 4 * x, y);
+	text("L", 5 * x, y);
+	text("E", 6 * x, y);
+	text("X", 7 * x, y);
+	text("I", 8 * x, y);
+	text("A", 9 * x, y);
 }
