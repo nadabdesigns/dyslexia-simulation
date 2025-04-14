@@ -67,8 +67,8 @@ form {
 .containerslider {
 	display: flex;
 	flex-direction: column;
-	background-color: #d0ff00;
-	border: #d0ff00;
+	/* background-color: #d0ff00;
+	border: #d0ff00; */
 	gap: 10px;
 	width: 300px;
 	width: 100%;
@@ -144,6 +144,16 @@ h2 {
 	border-radius: 20px;
 	border: 2px solid var(--Black);
 
+}
+.displayvalue{
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 10px;
+background: #1E1919;
+color: var(--white);
 }
 
 /* the slider's thumb */

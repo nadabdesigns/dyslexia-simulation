@@ -42,23 +42,24 @@ document.getElementById('reset').onclick = function(){window.location.reload();}
 // SLIDER VALES
 // display slider info
 // create a varible ftValueDisplay and assign it to the slider ft value
-let ftValueDisplay = document.getElementById("ft");
+let ftValueDisplay = document.querySelector("#ft .displayvalue");
 
 // set the current state of the text that is inside of ftValueDisplay
 // Update the display when the slider moves
+
 ftSlider.addEventListener("input", () => {
 	ftValueDisplay.textContent = `${Math.round(ftSlider.value * 100)}%`;
   });
 
 // repeate for all sliders
 // for sc
-let scValueDisplay = document.getElementById("sc");
+let scValueDisplay = document.querySelector("#sc .displayvalue");
 
 scSlider.addEventListener("input", () => {
 	scValueDisplay.textContent = `${Math.round(scSlider.value * 100)}%`;
   });
 // for rivers
-let riverValueDisplay = document.getElementById("rivers");
+let riverValueDisplay = document.querySelector("#rivers .displayvalue");
 
 riverSlider.addEventListener("input", () => {
 	riverValueDisplay.textContent = `${Math.round(riverSlider.value * 100)}%`;
