@@ -16,7 +16,7 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	padding: 60px;
+	
 
 	background-color: blue;
 	/* height: 100%; */
@@ -57,16 +57,21 @@ form {
 	display: flex;
 	flex-direction: row;
 }
+.firsttwoSliders{
+	display: flex;
+	flex-direction: row;
+}
 
 
 h1 {
 
 	font-family: "darkmode-on", sans-serif;
-	font-size: var(--h2);
+	font-size: 50px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
 	text-transform: capitalize;
+	max-width: 700px;
 
 	/* color: var(--white); */
 
@@ -86,7 +91,7 @@ h2 {
 .leftDiv {
 	background-color: white;
 	width: 20vw;
-	padding: 3vw;
+    padding: 40px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -220,7 +225,7 @@ button {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: capitalize;
-	width: 100%;
+	width: 200px;
 }
 
 /* changing font styles */
@@ -245,6 +250,10 @@ line-height: normal;
 	color: var(--Black);
 
 }
+.explination{
+	padding: 60px;
+
+}
 
 
 
@@ -264,6 +273,7 @@ line-height: normal;
 		flex-direction: column;
 
 	}
+	
 
 
 	.leftDiv {
@@ -285,6 +295,7 @@ line-height: normal;
 		font-size: 20px;
 
 	}
+
 }
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
