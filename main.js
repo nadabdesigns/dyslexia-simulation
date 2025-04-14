@@ -35,6 +35,36 @@ let riverSlider = document.getElementById("slider-river")
 // refresh page after clickig button
 
 document.getElementById('reset').onclick = function(){window.location.reload();}
+// 
+
+
+
+// SLIDER VALES
+// display slider info
+// create a varible ftValueDisplay and assign it to the slider ft value
+let ftValueDisplay = document.getElementById("ft");
+
+// set the current state of the text that is inside of ftValueDisplay
+// Update the display when the slider moves
+ftSlider.addEventListener("input", () => {
+	ftValueDisplay.textContent = `${Math.round(ftSlider.value * 100)}%`;
+  });
+
+// repeate for all sliders
+// for sc
+let scValueDisplay = document.getElementById("sc");
+
+scSlider.addEventListener("input", () => {
+	scValueDisplay.textContent = `${Math.round(scSlider.value * 100)}%`;
+  });
+// for rivers
+let riverValueDisplay = document.getElementById("rivers");
+
+riverSlider.addEventListener("input", () => {
+	riverValueDisplay.textContent = `${Math.round(riverSlider.value * 100)}%`;
+  });
+
+
 
 // targeting varbile just made for the event lister input and we are chaanging that data to  
 input.addEventListener("input", updateValue);

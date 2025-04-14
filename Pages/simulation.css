@@ -18,7 +18,7 @@ body {
 	flex-direction: column;
 
 
-	background-color: blue;
+	/* background-color: blue; */
 	/* height: 100%; */
 
 }
@@ -60,6 +60,7 @@ form {
 	flex-wrap: nowrap;
 	justify-content: center;
 	flex-direction: row;
+	gap: 10px;
 
 }
 
@@ -70,6 +71,7 @@ form {
 	border: #d0ff00;
 	gap: 10px;
 	width: 300px;
+	width: 100%;
 
 
 }
@@ -86,7 +88,7 @@ form {
 h1 {
 
 	font-family: "darkmode-on", sans-serif;
-	font-size: 50px;
+	font-size: 30px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -113,12 +115,13 @@ h2 {
 .leftDiv {
 	background-color: white;
 	width: 20vw;
-	padding: 40px;
+	padding:20vh 50px 20vh 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 40px;
 	/* height: 50vh; */
+	/* height: 40vh; */
 
 
 	width: 100%;
@@ -158,11 +161,11 @@ h2 {
 
 .rightDiv {
 	display: flex;
-	background-color: rgb(30, 138, 177);
+	/* background-color: rgb(30, 138, 177); */
 	width: 80vw;
-	height: 700px;
+	height: 100vh;
 	width: 100%;
-	padding: 60px;
+	padding: 200px 50px 200px 50px;
 	background-image: url('../Assets/Dyslexia.svg');
 	background-size: 100%;
 
