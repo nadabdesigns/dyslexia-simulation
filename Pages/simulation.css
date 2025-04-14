@@ -156,7 +156,7 @@ p {
 	align-self: stretch;
 	color: var(--Black);
 	border: 2px dotted black;
-	white-space: pre-wrap;
+	/* white-space: pre-wrap; */
 	max-width: 100%;
 	overflow-x: scroll;
 	height: 50%;

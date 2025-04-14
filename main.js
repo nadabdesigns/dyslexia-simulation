@@ -32,6 +32,10 @@ let scSlider = document.getElementById("slider-sc")
 
 let riverSlider = document.getElementById("slider-river")
 
+// refresh page after clickig button
+
+document.getElementById('reset').onclick = function(){window.location.reload();}
+
 // targeting varbile just made for the event lister input and we are chaanging that data to  
 input.addEventListener("input", updateValue);
 // (e)is the event and we're grabbing the text and spiting it out (later)
@@ -56,9 +60,9 @@ function updateValue(e) {
 				textReplace = textReplace + 'f';
 
 			}
-			else {
-				textReplace = textReplace + letterchage[i];
-			}
+			// else {
+			// 	textReplace = textReplace + letterchage[i];
+			// }
 
 
 
@@ -69,7 +73,7 @@ function updateValue(e) {
 
 		}
 		// slider for s and c
-		else if (Math.random() < scSlider.value) {
+		if (Math.random() < scSlider.value) {
 			if (letterchage[i] == "s") {
 				textReplace = textReplace + 'c';
 			}
@@ -91,6 +95,7 @@ function updateValue(e) {
 		}
 		// 
 		else if (Math.random() < riverSlider.value) {
+			console.log(riverSlider.value)
 			if (letterchage[i] == ` `) {
 				console.log('HEllo')
 				textReplace = textReplace + `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
