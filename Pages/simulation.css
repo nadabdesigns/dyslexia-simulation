@@ -285,7 +285,7 @@ button {
 	align-items: center;
 	gap: 15px;
 	align-self: stretch;
-	border-radius: 78px;
+	border-radius: 5px;
 	border: 2px solid #1E1919;
 	color: var(--Black);
 	background: hsl(0, 0%, 100%);
@@ -357,16 +357,23 @@ h3 {
 
 	.leftDiv {
 		width: 100%;
+		padding: 20px;
 	}
 
 	.rightDiv {
 		width: 100%;
+		padding: 20px 10px 20px 10px;
 
+
+	}
+	.topDiv .bottomDiv{
+		padding: 5px;
 
 	}
 
 	button {
 
+		background-color: var(--white);
 		/* width: 200px; */
 	}
 
