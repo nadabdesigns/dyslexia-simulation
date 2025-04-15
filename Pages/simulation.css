@@ -23,6 +23,11 @@ body {
 
 
 }
+.textdiv{
+	height: 2vh;
+	background-color: var(--white);
+	padding: 20px;
+}
 
 form {
 	height: 100%;
@@ -32,6 +37,10 @@ form {
 	overflow-y: hidden;
 	/* Scroll vertically! */
 
+}
+.slidersection{
+
+	padding: 100px 20px 100px 20px;
 }
 
 .input {
@@ -121,6 +130,10 @@ h2 {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 90px;
+	background-color: var(--white);
+
+	
+
 
 	/* height: 50vh; */
 	/* height: 40vh; */
@@ -357,7 +370,8 @@ h3 {
 
 	.leftDiv {
 		width: 100%;
-		padding: 20px;
+		padding: 0px;
+		/* background-color: var(--Black); */
 	}
 
 	.rightDiv {
@@ -391,6 +405,22 @@ h3 {
 
 		font-size: 14px;
 
+	}
+	.slidersection{
+
+		padding: 20px 20px 20px 20px;
+	}
+	.textdiv{
+		height: 50vh;
+		background-color: var(--Black);
+	}
+	h1{
+		color: var(--white);
+		text-transform: capitalize;
+		font-size: 25px;
+	}
+	.leftDiv{
+		background-color: var(--white);
 	}
 
 	.rightDiv {
