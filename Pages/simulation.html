@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<!-- javascript -->
-	
+
 	<!-- style sheet -->
 	<link rel="stylesheet" href="../Pages/simulation.css">
 	<link rel="stylesheet" href="../Pages/simulation.css" />
@@ -37,8 +37,9 @@
 			<br>White space
 		</h2> -->
 		<!-- <img src="../Assets/Dyslexia.svg" class="dyslexia"> -->
+		
 
-		<button id="reset">reset</button>
+
 
 		<div class="slider">
 
@@ -46,22 +47,37 @@
 				<div class="infoDiv">
 					<h2>f and t</h2>
 					<div id="ft">
-					  <p class="displayvalue">0%</p>
+						<p class="displayvalue">0%</p>
 					</div>
-				  </div>
-				  <input type="range" min="0.0" max="1" value="0.0" class="slider" id="slider-ft" step="0.05">
+				</div>
+				<input type="range" min="0.0" max="1" value="0.0" class="slider" id="slider-ft" step="0.05">
 			</div>
 			<div class="containerslider">
-				<div class="infoDiv"><h2>s and c</h2> <div id="sc"> <p class="displayvalue">0%</p></div></div>
+				<div class="infoDiv">
+					<h2>s and c</h2>
+					<div id="sc">
+						<p class="displayvalue">0%</p>
+					</div>
+				</div>
 				<input type="range" min="0.0" max="1" value="0.0" class="slider" id="slider-sc" step="0.05">
 			</div>
 			<div class="containerslider">
-				<div class="infoDiv"><h2>rivers </h2><div id="rivers"> <p class="displayvalue">0%</p></div></div>
+				<div class="infoDiv">
+					<h2>rivers </h2>
+					<div id="rivers">
+						<p class="displayvalue">0%</p>
+					</div>
+				</div>
 				<input type="range" min="0.0" max="1" value="0.0" class="slider" id="slider-river" step="0.05">
 			</div>
+			
+
 		</div>
-		
+		<h5>Type your own text below to <br>experience how I might see it.</h5>
+
+
 	</section>
+
 
 	<!-- Big Div on the right -->
 
@@ -70,6 +86,7 @@
 
 		<div class="topDiv">
 			<h3 class="h3White">Write a Prompt Below to Experience </h3>
+			
 			<form>
 				<!-- Imputs don't have dnding tags -->
 				<!-- add int the attribute called text -->
@@ -88,15 +105,13 @@
 					elit.
 					Nunc vulpu</h1> -->
 			</form>
+			<button id="reset">reset</button>
 
 		</div>
 		<div class="bottomDiv">
-			<h3 class="h3Black">Dyslexia Version</h3>
+			<!-- <h3 class="h3Black">This Version Simulates Dyslexia</h3> -->
 			<div class="outputDiv">
-				<h1 class="output">Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
-					velit
-					interdum, ac
-					aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+				<h1 class="output">This Version Simulates Dyslexia</h1>
 			</div>
 
 		</div>
@@ -110,15 +125,20 @@
 		<ul id="pizza-places"></ul> -->
 	</section>
 
+
 	<section class="explination">
-		
-		
+
+
 		For me, dyslexia feels like a challenge rooted in probability — some things click, others don’t. One of my
 		personal struggles is with phonological awareness — the ability to recognize and distinguish between phonemes,
 		the smallest units of sound in language.
 
 		Because of this, I might read a word like nap as nip or nab — it’s subtle, but it changes everything.
+		
 	</section>
+	
+
+
 
 
 </body>

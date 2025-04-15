@@ -48,7 +48,7 @@ let ftValueDisplay = document.querySelector("#ft .displayvalue");
 // Update the display when the slider moves
 
 ftSlider.addEventListener("input", () => {
-	ftValueDisplay.textContent = `${Math.round(ftSlider.value * 100)}%`;
+	ftValueDisplay.textContent = `%${Math.round(ftSlider.value * 100)}`;
   });
 
 // repeate for all sliders
@@ -56,13 +56,13 @@ ftSlider.addEventListener("input", () => {
 let scValueDisplay = document.querySelector("#sc .displayvalue");
 
 scSlider.addEventListener("input", () => {
-	scValueDisplay.textContent = `${Math.round(scSlider.value * 100)}%`;
+	scValueDisplay.textContent = `%${Math.round(scSlider.value * 100)}`;
   });
 // for rivers
 let riverValueDisplay = document.querySelector("#rivers .displayvalue");
 
 riverSlider.addEventListener("input", () => {
-	riverValueDisplay.textContent = `${Math.round(riverSlider.value * 100)}%`;
+	riverValueDisplay.textContent = `%${Math.round(riverSlider.value * 100)}`;
   });
 
 
