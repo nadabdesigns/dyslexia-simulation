@@ -1,50 +1,103 @@
 // ADDED IN SETUP
 // module aliases - name space called matter.something to make it different from you're normal code
+// frome - https://github.com/liabru/matter-js/wiki/Getting-started
+let Engine = Matter.Engine;
+let World = Matter.World;
+let Bodies = Matter.Bodies;
+let Body = Matter.Body;
+
+let engine;
+let world;
 
 
-// module aliases
-var Engine = Matter.Engine,
-    Render = Matter.Render,
-    Runner = Matter.Runner,
-    Bodies = Matter.Bodies,
-    Composite = Matter.Composite;
-let wordsToDisplay = [
-			"D",
-			"Y",
-			"S",
-			"L",
-			"E",
-			"X",
-			"I",
-			"A",
-		];
 
-// create an engine
-var engine = Engine.create();
+// varbles for boxes
+// storing the data
+let boxes = [];
+// setting the paramaters of where the ground is
+let ground;
+// create all of the letters
+let wordsToDisplay = ["D", "Y", "S", "L", "E", "X", "I", "A"];
 
-// create a renderer
-var render = Render.create({
-    element: document.body,
-    engine: engine
-});
+function setup() {
+	// make the canvas the width and height 
+	// make half of the container the gheight
+  createCanvas(windowWidth, windowHeight/1.5);
 
-// create two boxes and a ground
-var boxA = Bodies.rectangle(400, 200, 80, 80);
-var boxB = Bodies.rectangle(450, 50, 80, 80);
-var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
-// add all of the bodies to the world
-Composite.add(engine.world, [boxA, boxB, ground]);
+//   This is the physicis engine 
+// add it to the world ( place it in)
+  engine = Engine.create();
+  world = engine.world;
 
-// run the renderer
-Render.run(render);
+  // This is the ground we are creating the peramaters for the ground
+//   is static: true means it doesnt fall
+// the grround is a rectange with an x and y cordinate 
+// gotta set it to static beccause it stays still
+// gotta add the  it to the world
+// .add adds bodies tot the world
+// this is the syntax of a rectangle 
+// Matter.Bodies.rectangle(x, y, width, height, [options])
 
-// create runner
-var runner = Runner.create();
+ground = Bodies.rectangle(width / 2, height -20,width,40, { isStatic: true })
+World.add(world, ground);
 
-// run the engine
-Runner.run(runner, engine);
+//   ground = Bodies.rectangle(width / 2, height - 20, width, 40, { isStatic: true });
+//   World.add(world, ground);
 
+  // create boxes with letters
+  for (let i = 0; i < wordsToDisplay.length; i++) {
+    let x = random(100, width - 100);
+    let y = random(-100, -20);
+    boxes.push(new Box(x, y, 80, 80, wordsToDisplay[i]));
+  }
+}
+
+function draw() {
+//   background("#FEFFE2");
+  Engine.update(engine);
+
+  for (let box of boxes) {
+    box.show();
+  }
+
+  // draw ground
+  noStroke();
+//   fill(100);
+  rectMode(CENTER);
+  rect(ground.position.x, ground.position.y, width, 40);
+}
+
+class Box {
+  constructor(x, y, w, h, letter) {
+    this.body = Bodies.rectangle(x, y, w, h);
+    this.w = w;
+    this.h = h;
+    this.letter = letter;
+    World.add(world, this.body);
+  }
+
+  show() {
+    let pos = this.body.position;
+    let angle = this.body.angle;
+    push();
+    translate(pos.x, pos.y);
+    rotate(angle);
+    rectMode(CENTER);
+    fill(255);
+    stroke(0);
+    strokeWeight(1);
+    rect(0, 0, this.w, this.h);
+
+    // draw letter
+    fill(0);
+    noStroke();
+    textAlign(CENTER, CENTER);
+    textSize(130);
+    text(this.letter, 0, 0);
+    pop();
+  }
+}
 
 
 
