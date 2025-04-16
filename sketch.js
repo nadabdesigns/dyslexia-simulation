@@ -4,56 +4,56 @@
 
 
 // module aliases
-var Engine = Matter.Engine,
-    Render = Matter.Render,
-    Runner = Matter.Runner,
-    Bodies = Matter.Bodies,
-    Composite = Matter.Composite;
-let wordsToDisplay = [
-	"D",
-	"Y",
-	"S",
-	"L",
-	"E",
-	"X",
-	"I",
-	"A",
-];
+// var Engine = Matter.Engine,
+//     Render = Matter.Render,
+//     Runner = Matter.Runner,
+//     Bodies = Matter.Bodies,
+//     Composite = Matter.Composite;
+// let wordsToDisplay = [
+// 	"D",
+// 	"Y",
+// 	"S",
+// 	"L",
+// 	"E",
+// 	"X",
+// 	"I",
+// 	"A",
+// ];
 
-// use push later
+// // use push later
 
-// create an engine
-var engine = Engine.create();
+// // create an engine
+// var engine = Engine.create();
 
-// create a renderer
-var render = Render.create({
-    element: document.body,
-    engine: engine
-});
+// // create a renderer
+// var render = Render.create({
+//     element: document.body,
+//     engine: engine
+// });
 
-// create two boxes and a ground
-var boxD = Bodies.rectangle(666, 200, 80, 80);
-var boxY = Bodies.rectangle(555, 80, 70, 80);
-var boxS = Bodies.rectangle(444, 50, 80, 80);
-var boxL = Bodies.rectangle(550, 40, 80, 80);
-var boxE = Bodies.rectangle(550, 30, 80, 80);
-var boxX = Bodies.rectangle(550, 50, 80, 80);
-var boxI = Bodies.rectangle(550, 50, 80, 80);
-var boxA = Bodies.rectangle(550, 50, 80, 80);
+// // create two boxes and a ground
+// var boxD = Bodies.rectangle(666, 200, 80, 80);
+// var boxY = Bodies.rectangle(555, 80, 70, 80);
+// var boxS = Bodies.rectangle(444, 50, 80, 80);
+// var boxL = Bodies.rectangle(550, 40, 80, 80);
+// var boxE = Bodies.rectangle(550, 30, 80, 80);
+// var boxX = Bodies.rectangle(550, 50, 80, 80);
+// var boxI = Bodies.rectangle(550, 50, 80, 80);
+// var boxA = Bodies.rectangle(550, 50, 80, 80);
 
-var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+// var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
-// add all of the bodies to the world
-Composite.add(engine.world, [boxD, boxY,boxS,boxL,boxE,boxX,boxI,boxA, ground]);
+// // add all of the bodies to the world
+// Composite.add(engine.world, [boxD, boxY,boxS,boxL,boxE,boxX,boxI,boxA, ground]);
 
-// run the renderer
-Render.run(render);
+// // run the renderer
+// Render.run(render);
 
-// create runner
-var runner = Runner.create();
+// // create runner
+// var runner = Runner.create();
 
-// run the engine
-Runner.run(runner, engine);
+// // run the engine
+// Runner.run(runner, engine);
 
 // function setup() {
 // 	createCanvas(windowWidth, windowHeight/2 - 60);

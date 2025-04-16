@@ -10,11 +10,16 @@ html {
 	--h2: 24px;
 	--p: 20px;
 	--Black: #1E1919;
-	--white: #FEFFE2;
+	--white: #ecfffc;
 
 }
+
 body{
 	padding: 20px;
+	background-color: var(--white);
+}
+section{
+	height:90vh ;
 }
 button {
 	height: 10px;
@@ -38,6 +43,16 @@ button {
 	width: 100%;
 }
 
+.myVideo {
+	width: 100vw;
+	height: auto;
+	max-height: 100vh;
+	object-fit: contain;
+	position: absolute;
+	z-index: -1;
+	left: -10px;
+	bottom: 0%;
+  }
 
 h1 {
 
@@ -84,6 +99,7 @@ button {
 	line-height: normal;
 	text-transform: capitalize;
 	width: 100%;
+
 }
 
 #slider-ft{
