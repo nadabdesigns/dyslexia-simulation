@@ -9,7 +9,7 @@ html {
 	--h2: 24px;
 	--p: 20px;
 	--Black: #1E1919;
-	--white: #FEFFE2;
+	--white: #ecfffc;
 
 }
 
@@ -71,6 +71,20 @@ form {
 	justify-content: center;
 	flex-direction: row;
 	gap: 10px;
+	background-color: var(--Black);
+
+}
+/* The slider */
+#slider-ft,
+#slider-sc,
+#slider-river {
+	appearance: none;
+	width: 100%;
+	height: 20px;
+	background: var(--white);
+	outline: none;
+	border-radius: 20px;
+	border: .6px solid var(--Black);
 
 }
 
@@ -85,6 +99,7 @@ form {
 
 
 }
+
 
 .infoDiv {
 	display: flex;
@@ -115,6 +130,7 @@ h2 {
 	font-weight: 400;
 	font-style: normal;
 	line-height: 130%;
+	color: var(--white);
 
 
 
@@ -157,22 +173,12 @@ h5 {
 
 .slider {
 	gap: 60px;
-	justify-content: space-evenly
+	justify-content: space-evenly;
+	padding: 10px;
 }
 
 /* The slider */
-#slider-ft,
-#slider-sc,
-#slider-river {
-	appearance: none;
-	width: 100%;
-	height: 20px;
-	background: var(--white);
-	outline: none;
-	border-radius: 20px;
-	border: .6px solid var(--Black);
 
-}
 
 .displayvalue {
 	display: flex;
@@ -182,7 +188,7 @@ h5 {
 	gap: 50px;
 	border-radius: 10px;
 	background: #1E1919;
-	font-size: 10px;
+	font-size: 16px;
 	color: var(--white);
 }
 
@@ -222,7 +228,7 @@ p {
 	color: #1E1919;
 
 	font-family: Darkmode;
-	font-size: 16px;
+	font-size: 1px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -419,6 +425,9 @@ h3 {
 		text-transform: capitalize;
 		font-size: 25px;
 	}
+	h2{
+		color: var(--Black);
+	}
 	.leftDiv{
 		background-color: var(--white);
 	}
@@ -431,8 +440,23 @@ h3 {
 	.slider {
 		display: flex;
 		flex-direction: column;
+		padding: 0%;
+		background-color: var(--white);
+
 
 	}
+	#slider-ft,
+#slider-sc,
+#slider-river {
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	background: var(--white);
+	outline: none;
+	border-radius: 20px;
+	border: .6px solid var(--Black);
+
+}
 
 }
 

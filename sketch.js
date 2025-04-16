@@ -1,3 +1,7 @@
+// THESE ARE THE STEPS
+// CREATE THE BOXES 
+// PUSH P5JS OVER THEM
+
 
 // module aliases
 var Engine = Matter.Engine,
