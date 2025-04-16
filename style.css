@@ -13,8 +13,9 @@ p {
 	font-size: 10px;
 }
 body{
-	padding: 64px;
+	/* padding: 64px; */
 }
+canvas 
 button {
 
 	display: flex;
