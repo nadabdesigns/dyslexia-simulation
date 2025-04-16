@@ -229,7 +229,7 @@ h5 {
 }
 
 p {
-	color: #1E1919;
+	
 
 	font-family: Darkmode;
 	font-size: 1px;
@@ -237,8 +237,12 @@ p {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: capitalize;
-
+	
+	mix-blend-mode: difference;
+    color: var(--white);
 }
+
+
 
 .topDiv {
 	background-color: var(--Black);
