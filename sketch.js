@@ -15,16 +15,38 @@ var engine;
 // world full of bodies
 var world;
 var box1;
+// create a render
+var render = Render.create({
+    element: document.body,
+    engine: engine
+});
+// create two boxes and a ground
+var boxA = Bodies.rectangle(400, 200, 80, 80);
+var boxB = Bodies.rectangle(450, 50, 80, 80);
+var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+
+// add all of the bodies to the world
+Composite.add(engine.world, [boxA, boxB, ground]);
+
+// run the renderer
+Render.run(render);
+
+// create runner
+var runner = Runner.create();
+
+// run the engine
+Runner.run(runner, engine);
 
 
 
 function setup() {
 	createCanvas(400, 400);
 	engine = Engine.create();
+	world = engine.world;
 	// from documentation Matter.Bodies.rectangle(x, y, width, height, [options])
-	box1 = Bodies.rectangle(200, 100, 80, 60);
+	box1 = Bodies.rectangle(100, 110, 100, 60);
 	// new engine setup
-	Matter.Runner.run(engine) 
+	Matter.Runner.run(engine);
 	console.log(box1);
 
 	
@@ -38,7 +60,7 @@ function setup() {
 	
 }
 function draw(){
-	console.log(box1);
+	
 	
 	background(220);
 	rect(box1.position.x,box1.position.y,80,80)
