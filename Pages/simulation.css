@@ -408,6 +408,7 @@ h3 {
 	h1 {
 
 		font-size: 20px;
+		color: var(--Black);
 
 	}
 	.slidersection{
@@ -466,6 +467,9 @@ h3 {
 		background-color: var(--white);
 
 
+	}
+	.output{
+		color: var(--Black)
 	}
 	#slider-ft,
 #slider-sc,
