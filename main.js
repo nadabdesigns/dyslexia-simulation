@@ -35,6 +35,11 @@ let riverSlider = document.getElementById("slider-river")
 // refresh page after clickig button
 
 document.getElementById('reset').onclick = function(){window.location.reload();}
+
+
+
+
+
 // 
 
 
@@ -168,9 +173,12 @@ function updateValue(e) {
 
 	// goining into the log and seeing what the text content is
 	output.innerHTML = textReplace
+
+	
 }
 // add a scroll to funtion
 
+// scrool to the top of the page after button is clicked
 
 
 // adding in a const and query selector for input and output

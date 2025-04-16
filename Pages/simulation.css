@@ -24,9 +24,13 @@ body {
 
 }
 .textdiv{
-	height: 2vh;
+	/* height: 2vh; */
 	background-color: var(--white);
-	padding: 20px;
+	
+	padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
 }
 
 form {
@@ -39,8 +43,7 @@ form {
 
 }
 .slidersection{
-
-	padding: 100px 20px 100px 20px;
+		padding: 100px 50px 100px 50px;
 }
 
 .input {
@@ -141,7 +144,8 @@ h2 {
 .leftDiv {
 	/* background-color: white; */
 	width: 20vw;
-	padding: 10vh 80px 10vh 80px;
+	/* padding: 10vh 80px 10vh 80px; */
+	padding: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -341,11 +345,11 @@ h3 {
 }
 
 .explination {
-	padding: 60px;
+	padding: 10%;
 	color: #1E1919;
 
 	font-family: Darkmode;
-	font-size: 10px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -371,6 +375,10 @@ h3 {
 		flex-direction: column;
 
 	}
+	.textiv{
+		padding: 20px 20px 0px 20px;
+	}
+	
 
 
 
@@ -401,6 +409,20 @@ h3 {
 
 		font-size: 20px;
 
+	}
+	.slidersection{
+		padding: 100px 10px 100px 10px;
+	}
+
+	.explination {
+		padding: 10%;
+		color: #1E1919;
+	
+		font-family: Darkmode;
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 	}
 
 }
@@ -456,7 +478,18 @@ h3 {
 	border-radius: 20px;
 	border: .6px solid var(--Black);
 
+
 }
+	.explination {
+		padding: 40px;
+		color: #1E1919;
+	
+		font-family: Darkmode;
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
 
 }
 
