@@ -169,6 +169,7 @@ function updateValue(e) {
 	// goining into the log and seeing what the text content is
 	output.innerHTML = textReplace
 }
+// add a scroll to funtion
 
 
 

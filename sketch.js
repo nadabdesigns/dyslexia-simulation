@@ -1,6 +1,10 @@
 // ADDED IN SETUP
 // module aliases - name space called matter.something to make it different from you're normal code
 // frome - https://github.com/liabru/matter-js/wiki/Getting-started
+// REFERENCES - 
+		// https://www.youtube.com/watch?v=urR596FsU68
+		// https://www.youtube.com/watch?v=s0BnHeBX0Bw
+		// 
 let Engine = Matter.Engine;
 let World = Matter.World;
 let Bodies = Matter.Bodies;
@@ -39,13 +43,13 @@ function setup() {
 // this is the syntax of a rectangle 
 // Matter.Bodies.rectangle(x, y, width, height, [options])
 
-ground = Bodies.rectangle(width / 2, height -20,width,40, { isStatic: true })
-World.add(world, ground);
 
-//   ground = Bodies.rectangle(width / 2, height - 20, width, 40, { isStatic: true });
-//   World.add(world, ground);
+
+  ground = Bodies.rectangle(width / 2, height - 20, width, 40, { isStatic: true });
+  World.add(world, ground);
 
   // create boxes with letters
+//   asign ranoe letter to box
   for (let i = 0; i < wordsToDisplay.length; i++) {
     let x = random(100, width - 100);
     let y = random(-100, -20);
