@@ -1,25 +1,33 @@
 // ADDED IN SETUP
 // module aliases - name space called matter.something to make it different from you're normal code
-var Engine = Matter.Engine,
 
-    // Render = Matter.Render,
+
+// module aliases
+var Engine = Matter.Engine,
+    Render = Matter.Render,
     Runner = Matter.Runner,
     Bodies = Matter.Bodies,
     Composite = Matter.Composite;
+let wordsToDisplay = [
+			"D",
+			"Y",
+			"S",
+			"L",
+			"E",
+			"X",
+			"I",
+			"A",
+		];
 
 // create an engine
-// this is where we are adding in the engine
+var engine = Engine.create();
 
-// the whole physiscs engine
-var engine;
-// world full of bodies
-var world;
-var box1;
-// create a render
+// create a renderer
 var render = Render.create({
     element: document.body,
     engine: engine
 });
+
 // create two boxes and a ground
 var boxA = Bodies.rectangle(400, 200, 80, 80);
 var boxB = Bodies.rectangle(450, 50, 80, 80);
@@ -39,33 +47,6 @@ Runner.run(runner, engine);
 
 
 
-function setup() {
-	createCanvas(400, 400);
-	engine = Engine.create();
-	world = engine.world;
-	// from documentation Matter.Bodies.rectangle(x, y, width, height, [options])
-	box1 = Bodies.rectangle(100, 110, 100, 60);
-	// new engine setup
-	Matter.Runner.run(engine);
-	console.log(box1);
-
-	
-	// make the engine run
-	// default engine run
-	// run the renderer
-
-
-
-
-	
-}
-function draw(){
-	
-	
-	background(220);
-	rect(box1.position.x,box1.position.y,80,80)
-	
-}
 
 
 
