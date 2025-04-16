@@ -14,13 +14,15 @@ html {
 
 }
 
-body{
+body {
 	padding: 20px;
 	background-color: var(--white);
 }
-section{
-	height:90vh ;
+
+section {
+	height: 90vh;
 }
+
 button {
 	height: 10px;
 
@@ -43,36 +45,28 @@ button {
 	width: 100%;
 }
 
-.myVideo {
-	width: 100vw;
-	height: auto;
-	max-height: 100vh;
-	object-fit: contain;
-	position: absolute;
-	z-index: -1;
-	left: -10px;
-	bottom: 0%;
-  }
+
 
 h1 {
 
 	font-family: "darkmode-on", sans-serif;
 	font-weight: 500;
 	font-style: normal;
+	font-weight: 700;
 	font-size: 50px;
-	
-	text-transform: uppercase;
+	text-transform: capitalize;
 
 }
+
 p {
 	font-family: "darkmode-on", sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 10px;
-	
-	padding-top: 30%;
-	padding-bottom: 30%;
-	
+
+	/* padding-top: 30%;
+	padding-bottom: 30%; */
+
 }
 
 
@@ -102,6 +96,143 @@ button {
 
 }
 
-#slider-ft{
-	background-color: aqua;
+.video_mobile {
+	display: none;
 }
+
+.video_web {
+
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	position: absolute;
+	z-index: -1;
+	right: 30px;
+	left: 5px;
+	bottom: 10vh;
+
+
+}
+
+@media screen and (max-width: 1050px) {
+	.video_mobile {
+		display: none;
+	}
+
+	.video_web {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		position: absolute;
+		z-index: -1;
+		right: 30px;
+		left: 5px;
+		top: 20%;
+	}
+}
+
+
+
+/* less than 600px */
+@media screen and (max-width: 600px) {
+	.video_web {
+		display: none;
+	}
+
+	.video_mobile {
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		position: absolute;
+		z-index: -1;
+		right: 30px;
+		left: 5px;
+		top: 20%;
+	}
+
+	h1 {
+
+		font-family: "darkmode-on", sans-serif;
+		font-weight: 500px;
+		font-style: normal;
+		font-size: 30px;
+
+		text-transform: capitalize;
+
+	}
+
+	p {
+		font-family: "darkmode-on", sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 10px;
+
+		padding-top: 30%;
+		padding-bottom: 30%;
+
+	}
+
+
+
+	button {
+
+		display: flex;
+		height: 50px;
+		padding: 15px;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		align-self: stretch;
+		border-radius: 78px;
+		border: 2px solid #1E1919;
+		color: var(--white);
+
+		background: #1E1919;
+
+
+		font-family: Darkmode;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: capitalize;
+		width: 90%;
+
+	}
+
+
+}
+
+
+/* SCREEN IS SMALLER THAN 530 PX */
+@media screen and (max-width: 530px) {
+	.video_mobile {
+		width: 100vw;
+		height: auto;
+		object-fit: contain;
+		position: absolute;
+		z-index: -1;
+		right: 30px;
+		left: 5px;
+		top: 10vh;
+	}
+
+	/* .video_web {
+		display: none;
+	} */
+
+
+}
+
+
+
+
+
+
+/* SCREEN IS SMALLER THATN 400 PX */
+
+@media screen and (max-width: 400px) {}
+
+/* WHEN SCREEN IS SMALLER THAN 350 PX */
+@media screen and (max-width: 350px) {}
