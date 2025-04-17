@@ -61,8 +61,8 @@ p {
 
 
 button {
-	font-family: "darkmode-on", sans-serif;
-	font-weight: 500;
+	
+	 
 	display: flex;
 	height: 50px;
 	width: 300px;
@@ -75,13 +75,11 @@ button {
 	/* border: 5px solid var(--Black); */
 	color: var(--Black);
 
-	background: var(--white);
 
-
-	font-family: Darkmode;
+	font-family: "darkmode-on", sans-serif;
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: normal;
 	text-transform: capitalize;
 	mix-blend-mode: exclusion;
