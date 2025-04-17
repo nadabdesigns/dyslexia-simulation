@@ -18,6 +18,10 @@ body {
 	background-color: var(--white);
 }
 
+/* section {
+	display: flex;
+	flex-direction: row;
+} */
 
 h1 {
 
@@ -114,6 +118,15 @@ button {
 		left: 5px;
 		top: 20%;
 	}
+	h1 {
+        font-family: "darkmode-on", sans-serif;
+        font-weight:700px;
+        font-style: normal;
+        font-size: 30px;
+        text-transform: capitalize;
+        /* font-weight: 900; */
+    }
+	
 }
 
 
@@ -138,10 +151,11 @@ button {
 
 	h1 {
 
-		font-family: "darkmode-on", sans-serif;
-		font-weight: 500px;
+		font-family: "darkmo", sans-serif;
+		font-weight: 900;
 		font-style: normal;
-		font-size: 30px;
+		font-size: 80px;
+		
 
 		text-transform: capitalize;
 
@@ -153,8 +167,8 @@ button {
 		font-style: normal;
 		font-size: 10px;
 
-		padding-top: 30%;
-		padding-bottom: 30%;
+		/* padding-top: 30%; */
+		padding-bottom: 45%;
 
 	}
 
@@ -193,8 +207,8 @@ button {
 		line-height: normal;
 		text-transform: capitalize;
 	
-	
 	}
+	
 
 
 }
@@ -210,12 +224,13 @@ button {
 		z-index: -1;
 		right: 30px;
 		left: 5px;
-		top: 10vh;
+		top: 2vh;
 	}
 
 	/* .video_web {
 		display: none;
 	} */
+	h1{font-size: 70px;}
 
 
 }
@@ -227,7 +242,11 @@ button {
 
 /* SCREEN IS SMALLER THATN 400 PX */
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+	h1{font-size: 60px;}
+}
 
 /* WHEN SCREEN IS SMALLER THAN 350 PX */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+	h1{font-size: 50px;}
+}

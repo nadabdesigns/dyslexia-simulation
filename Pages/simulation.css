@@ -13,6 +13,7 @@ html {
 
 }
 
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -23,14 +24,15 @@ body {
 
 
 }
-.textdiv{
+
+.textdiv {
 	/* height: 2vh; */
 	background-color: var(--white);
-	
+
 	padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 0px;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 0px;
 }
 
 form {
@@ -42,8 +44,9 @@ form {
 	/* Scroll vertically! */
 
 }
-.slidersection{
-		padding: 100px 50px 100px 50px;
+
+.slidersection {
+	padding: 100px 50px 100px 50px;
 }
 
 .input {
@@ -77,6 +80,7 @@ form {
 	background-color: var(--Black);
 
 }
+
 /* The slider */
 #slider-ft,
 #slider-sc,
@@ -152,7 +156,7 @@ h2 {
 	gap: 90px;
 	background-color: var(--white);
 
-	
+
 
 
 	/* height: 50vh; */
@@ -229,7 +233,7 @@ h5 {
 }
 
 p {
-	
+
 
 	font-family: Darkmode;
 	font-size: 1px;
@@ -237,9 +241,9 @@ p {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: capitalize;
-	
+
 	mix-blend-mode: difference;
-    color: var(--white);
+	color: var(--white);
 }
 
 
@@ -379,10 +383,11 @@ h3 {
 		flex-direction: column;
 
 	}
-	.textiv{
+
+	.textiv {
 		padding: 20px 20px 0px 20px;
 	}
-	
+
 
 
 
@@ -398,7 +403,8 @@ h3 {
 
 
 	}
-	.topDiv .bottomDiv{
+
+	.topDiv .bottomDiv {
 		padding: 5px;
 
 	}
@@ -415,14 +421,15 @@ h3 {
 		color: var(--Black);
 
 	}
-	.slidersection{
+
+	.slidersection {
 		padding: 100px 10px 100px 10px;
 	}
 
 	.explination {
 		padding: 10%;
 		color: #1E1919;
-	
+
 		font-family: Darkmode;
 		font-size: 10px;
 		font-style: normal;
@@ -439,23 +446,28 @@ h3 {
 		font-size: 14px;
 
 	}
-	.slidersection{
+
+	.slidersection {
 
 		padding: 20px 20px 20px 20px;
 	}
-	.textdiv{
+
+	.textdiv {
 		height: 100vh;
 		background-color: var(--Black);
 	}
-	h1{
+
+	h1 {
 		color: var(--white);
 		text-transform: capitalize;
 		font-size: 60px;
 	}
-	h2{
+
+	h2 {
 		color: var(--Black);
 	}
-	.leftDiv{
+
+	.leftDiv {
 		background-color: var(--white);
 	}
 
@@ -464,6 +476,7 @@ h3 {
 		flex-direction: column;
 
 	}
+
 	.slider {
 		display: flex;
 		flex-direction: column;
@@ -472,26 +485,29 @@ h3 {
 
 
 	}
-	.output{
+
+	.output {
 		color: var(--Black)
 	}
+
 	#slider-ft,
-#slider-sc,
-#slider-river {
-	appearance: none;
-	width: 100%;
-	height: 100%;
-	background: var(--white);
-	outline: none;
-	border-radius: 20px;
-	border: .6px solid var(--Black);
+	#slider-sc,
+	#slider-river {
+		appearance: none;
+		width: 100%;
+		height: 100%;
+		background: var(--white);
+		outline: none;
+		border-radius: 20px;
+		border: .6px solid var(--Black);
 
 
-}
+	}
+
 	.explination {
 		padding: 40px;
 		color: #1E1919;
-	
+
 		font-family: Darkmode;
 		font-size: 10px;
 		font-style: normal;
