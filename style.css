@@ -81,6 +81,8 @@ button {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: capitalize;
+	mix-blend-mode: exclusion;
+    background: linear-gradient(135deg, #11cb3b, #2dff00);
 
 
 }
@@ -206,6 +208,8 @@ button {
 		font-weight: 400;
 		line-height: normal;
 		text-transform: capitalize;
+		mix-blend-mode: exclusion;
+    background: linear-gradient(135deg, #11cb3b, #2dff00);
 	
 	}
 	
