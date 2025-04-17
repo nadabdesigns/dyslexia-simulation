@@ -10,8 +10,11 @@ html {
 	--p: 20px;
 	--Black: #1E1919;
 	--white: #ecfffc;
-
+	--green: #2dff00;
+	--magenta:#d200ff ;
 }
+
+
 
 
 body {
@@ -62,9 +65,11 @@ form {
 	font-weight: 700;
 	/* line-height: normal; */
 	text-transform: capitalize;
-	background-color: #180606;
+	mix-blend-mode: exclusion;
+    /* background: linear-gradient(135deg, #11cb3b, #2dff00); */
 	border-radius: 5px;
-	/* border: 1px solid #d0ff00; */
+	border: 1px ;
+	border: 2px solid #2fff00;
 
 
 }
@@ -195,7 +200,7 @@ h5 {
 	align-items: center;
 	gap: 50px;
 	border-radius: 10px;
-	background: #1E1919;
+	background: var(--green);
 	font-size: 16px;
 	color: var(--white);
 }
@@ -207,9 +212,9 @@ h5 {
 	width: 20px;
 	height: 20px;
 	border-radius: 100px;
-	background: var(--white);
+	background: var(--Black);
 	cursor: pointer;
-	border: 7px solid var(--Black);
+	border: 7px solid var(--magenta);
 
 }
 
@@ -278,6 +283,8 @@ p {
 
 
 }
+/* norb */
+
 
 .output {
 	/* color: rgb(255, 255, 255); */
@@ -442,6 +449,10 @@ h3 {
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {
+	nobr{
+	    mix-blend-mode: exclusion;
+    background: linear-gradient(135deg, #11cb3b, #2dff00);
+}
 	h1 {
 
 		font-size: 14px;
