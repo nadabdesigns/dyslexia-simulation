@@ -47,6 +47,12 @@ document.getElementById('reset').onclick = function() {
 	}, 500); 
   };
 
+//   hacky way to fix the back buton 
+
+  document.getElementById('back').onclick = function () {
+	window.location.href = '../index.html';
+  };
+
 
 
 
