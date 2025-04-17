@@ -32,14 +32,19 @@ let scSlider = document.getElementById("slider-sc")
 
 let riverSlider = document.getElementById("slider-river")
 
-// refresh page after clickig button
-
-
+// REFRESH THE PAGE AFTER CLICKING A SECTION
 // getting leement by ID
 // this how you set up one function after another 
+// listening for a click on reset then scrolling to slider if this scrolls it will delay for the page to reset before scrolling to the id
 document.getElementById('reset').onclick = function() {
-	window.scrollTo(0, 200); // Scroll to top of page
-	window.location.reload(); // Reload the page
+	const sliderElement = document.querySelector('.slidersection');
+	if (sliderElement) {
+	  sliderElement.scrollIntoView({ behavior: 'smooth' });
+	}
+	setTimeout(() => {
+	  window.location.reload();
+	//   this is were it is delayed by .5 sec
+	}, 500); 
   };
 
 

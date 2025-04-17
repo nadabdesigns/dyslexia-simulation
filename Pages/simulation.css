@@ -20,26 +20,62 @@ html {
 
 
 
+
 body {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--white);
 
 
-
-
-
 }
 
+/* big container with text */
 .textdiv {
-	/* height: 2vh; */
+	display: flex;
+	flex-direction: row-reverse;
 	background-color: var(--white);
-
 	padding-left: 40px;
 	padding-top: 40px;
 	padding-right: 40px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+	justify-content: space-between;
+}
+
+#back {
+	background-color: var(--Black);
+	color: var(--white);
+	width: 30px;
+	height: 30px;
+	border-radius: var(--stroke);
+	align-self: flex-start;
+}
+
+h1 {
+
+	font-family: "darkmode-on", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: capitalize;
+	max-width: 700px;
+
+	/* color: var(--white); */
+
+}
+
+h2 {
+	font-family: "darkmode-on", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 130%;
+	color: var(--white);
+
+
+
+
 }
 
 form {
@@ -128,32 +164,7 @@ form {
 
 
 
-h1 {
 
-	font-family: "darkmode-on", sans-serif;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: capitalize;
-	max-width: 700px;
-
-	/* color: var(--white); */
-
-}
-
-h2 {
-	font-family: "darkmode-on", sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	font-style: normal;
-	line-height: 130%;
-	color: var(--white);
-
-
-
-
-}
 
 /* the left div */
 .leftDiv {
@@ -443,6 +454,7 @@ h3 {
 		position: static;
 		top: 0px;
 	}
+
 	/* the numbers on top of the slider */
 	.displayvalue {
 		background: none
@@ -463,14 +475,26 @@ h3 {
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {
+
 	/* nobr {
 		mix-blend-mode: exclusion;
 		background: linear-gradient(135deg, #11cb3b, #2dff00);
 	} */
 	.textdiv {
+		display: flex;
 		height: 100vh;
 		background-color: var(--Black);
 		margin-bottom: 90px;
+		flex-direction: column;
+	}
+
+	#back {
+		align-self: end;
+		background-color: var(--white);
+		color: var(--black);
+		width: 30px;
+		height: 30px;
+		border-radius: 2px;
 	}
 
 	h1 {
@@ -490,17 +514,19 @@ h3 {
 	.rightDiv {
 		width: 100%;
 		flex-direction: column;
+		height: 100vh;
 
 	}
 
-	
+
 
 	.slidersection {
-		position: sticky;
+		position: static;
 
 		padding: 0px 0px 0px 0px;
-		
+
 	}
+
 	.slider {
 		display: flex;
 		flex-direction: column;
