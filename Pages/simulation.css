@@ -342,10 +342,11 @@ button {
 h3 {
 
 
-	font-family: Darkmode;
+	font-family: "darkmode-on", sans-serif;
+	font-size: 40px;
 	font-size: var(--h2);
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 500;
 	line-height: normal;
 
 }
