@@ -12,6 +12,9 @@ html {
 	--white: #ecfffc;
 	--green: #2dff00;
 	--magenta: #d200ff;
+
+
+	--stroke: 2px;
 }
 
 
@@ -36,6 +39,7 @@ body {
 	padding-top: 40px;
 	padding-right: 40px;
 	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 form {
@@ -50,7 +54,7 @@ form {
 
 .slidersection {
 	padding: 100px 50px 100px 50px;
-	position: sticky;
+	position: static;
 	top: 20px;
 }
 
@@ -71,7 +75,7 @@ form {
 	/* background: linear-gradient(135deg, #11cb3b, #2dff00); */
 	border-radius: 5px;
 	border: 1px;
-	border: 2px solid var(--green);
+	border: var(--stroke) solid var(--green);
 
 
 }
@@ -98,7 +102,7 @@ form {
 	background: var(--white);
 	outline: none;
 	border-radius: 20px;
-	border: .6px solid var(--Black);
+	border: 2px solid var(--Black);
 
 }
 
@@ -188,7 +192,7 @@ h5 {
 
 .slider {
 	gap: 60px;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	padding: 10px;
 }
 
@@ -202,7 +206,7 @@ h5 {
 	align-items: center;
 	gap: 50px;
 	border-radius: 10px;
-	background: var(--green);
+	background: var(--magenta);
 	font-size: 16px;
 	color: var(--white);
 }
@@ -286,7 +290,7 @@ p {
 
 }
 
-/* norb */
+
 
 
 .output {
@@ -436,8 +440,12 @@ h3 {
 
 	.slidersection {
 		padding: 100px 10px 100px 10px;
-		position: sticky;
-		top: 20px;
+		position: static;
+		top: 0px;
+	}
+	/* the numbers on top of the slider */
+	.displayvalue {
+		background: none
 	}
 
 	.explination {
@@ -455,25 +463,14 @@ h3 {
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {
-	nobr {
+	/* nobr {
 		mix-blend-mode: exclusion;
 		background: linear-gradient(135deg, #11cb3b, #2dff00);
-	}
-
-	h1 {
-
-		font-size: 14px;
-
-	}
-
-	.slidersection {
-
-		padding: 20px 20px 20px 20px;
-	}
-
+	} */
 	.textdiv {
 		height: 100vh;
 		background-color: var(--Black);
+		margin-bottom: 90px;
 	}
 
 	h1 {
@@ -496,14 +493,26 @@ h3 {
 
 	}
 
+	
+
+	.slidersection {
+		position: sticky;
+
+		padding: 0px 0px 0px 0px;
+		
+	}
 	.slider {
 		display: flex;
 		flex-direction: column;
-		padding: 0%;
+		/* padding: 20px; */
 		background-color: var(--white);
 
 
 	}
+
+
+
+
 
 	.output {
 		color: var(--Black)
@@ -518,7 +527,7 @@ h3 {
 		background: var(--white);
 		outline: none;
 		border-radius: 20px;
-		border: .6px solid var(--Black);
+		border: var(--stroke) solid var(--Black);
 
 
 	}
