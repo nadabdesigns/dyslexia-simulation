@@ -219,7 +219,7 @@ h5 {
 
 	/* background-color: rgb(30, 138, 177); */
 
-	height: 100vh;
+	height: 80vh;
 	width: 100%;
 	padding: 80px 50px 80px 50px;
 	background-repeat: no-repeat;
@@ -281,7 +281,7 @@ p {
 
 .output {
 	/* color: rgb(255, 255, 255); */
-	font-size: 16px;
+	font-size: var(--h3);
 }
 
 .outputDiv {
