@@ -31,7 +31,7 @@ h1 {
 	font-weight: 700;
 	font-size: 50px;
 	text-transform: capitalize;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 
 }
 
@@ -40,10 +40,11 @@ p {
 	font-family: "darkmode-on", sans-serif;
 	font-weight: 500;
 	font-style: normal;
-	font-size: 10px;
+	font-size: 30px;
 	padding-bottom: 10%;
 	color: var(--white);
     mix-blend-mode: exclusion;
+	line-height: 130%;
 }
 
 
@@ -101,7 +102,7 @@ button {
 	z-index: -1;
 	right: 30px;
 	left: 5px;
-	bottom: 10vh;
+	bottom: 0vh;
 
 
 }
