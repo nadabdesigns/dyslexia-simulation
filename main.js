@@ -34,7 +34,13 @@ let riverSlider = document.getElementById("slider-river")
 
 // refresh page after clickig button
 
-document.getElementById('reset').onclick = function(){window.location.reload();}
+
+// getting leement by ID
+// this how you set up one function after another 
+document.getElementById('reset').onclick = function() {
+	window.scrollTo(0, 300); // Scroll to top of page
+	window.location.reload(); // Reload the page
+  };
 
 
 

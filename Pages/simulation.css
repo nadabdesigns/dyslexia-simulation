@@ -11,7 +11,7 @@ html {
 	--Black: #1E1919;
 	--white: #ecfffc;
 	--green: #2dff00;
-	--magenta:#d200ff ;
+	--magenta: #d200ff;
 }
 
 
@@ -65,11 +65,11 @@ form {
 	font-weight: 700;
 	/* line-height: normal; */
 	text-transform: capitalize;
-	mix-blend-mode: exclusion;
-    /* background: linear-gradient(135deg, #11cb3b, #2dff00); */
+
+	/* background: linear-gradient(135deg, #11cb3b, #2dff00); */
 	border-radius: 5px;
-	border: 1px ;
-	border: 2px solid #2fff00;
+	border: 1px;
+	border: 2px solid var(--green);
 
 
 }
@@ -209,8 +209,8 @@ h5 {
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	border-radius: 100px;
 	background: var(--Black);
 	cursor: pointer;
@@ -240,7 +240,7 @@ h5 {
 p {
 
 
-	font-family: Darkmode;
+	font-family: darkmode-on;
 	font-size: 1px;
 	font-style: normal;
 	font-weight: 400;
@@ -283,6 +283,7 @@ p {
 
 
 }
+
 /* norb */
 
 
@@ -334,7 +335,7 @@ button {
 	line-height: normal;
 	text-transform: capitalize;
 	width: 100%;
-	
+
 }
 
 /* changing font styles */
@@ -432,6 +433,8 @@ h3 {
 
 	.slidersection {
 		padding: 100px 10px 100px 10px;
+		position: sticky;
+		top: 20px;
 	}
 
 	.explination {
@@ -449,10 +452,11 @@ h3 {
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {
-	nobr{
-	    mix-blend-mode: exclusion;
-    background: linear-gradient(135deg, #11cb3b, #2dff00);
-}
+	nobr {
+		mix-blend-mode: exclusion;
+		background: linear-gradient(135deg, #11cb3b, #2dff00);
+	}
+
 	h1 {
 
 		font-size: 14px;
@@ -507,7 +511,7 @@ h3 {
 	#slider-river {
 		appearance: none;
 		width: 100%;
-		height: 100%;
+		height: 30px;
 		background: var(--white);
 		outline: none;
 		border-radius: 20px;
