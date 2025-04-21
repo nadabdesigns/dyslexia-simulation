@@ -47,6 +47,10 @@ body {
     background: linear-gradient(135deg, #11cb3b, #2dff00);
 	
 }
+.offAfterchlick{
+	background: linear-gradient(135deg, #3611cb, #2dff00);
+
+}
 label{
 	height: 100px;
 	max-width: 100px;
@@ -149,10 +153,7 @@ a {
 	.video_mobile {
 		display: none;
 	}
-	.headingDiv{
-		display:flex;
-		flex-direction: column;
-	}
+
 
 	.video_web {
 		width: 100%;
@@ -182,6 +183,10 @@ a {
 
 /* less than 600px */
 @media screen and (max-width: 600px) {
+	.headingDiv{
+		display:flex;
+		flex-direction: column;
+	}
 	.video_web {
 		display: none;
 	}

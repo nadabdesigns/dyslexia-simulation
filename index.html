@@ -86,6 +86,7 @@
 		// created 3 varbiles - one hidden one for the video and one to turn in off 
 		// used and event lisener to select both video using brackts[0] and [1] to specify both 
 		// swiched them to display non on toggle click
+		let buttonStyle = document.querySelectorAll('#off');
 		const highlightClass = 'hidden' // “Strings” (like a class name) are wrapped in quotes.
 		let buttonVideo = document.querySelectorAll('video') // Any selector.
 		let switchButton = document.querySelector('#off')
@@ -96,6 +97,8 @@
 			buttonVideo[0].classList.toggle(highlightClass) // Toggle the class!
 			// the second viddeo
 			buttonVideo[1].classList.toggle(highlightClass) // Toggle the class!
+
+			// now for the button itself
 		}
 	</script>
 
