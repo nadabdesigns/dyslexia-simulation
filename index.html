@@ -26,11 +26,13 @@
 
 
 
-
+<div class="headingDiv">
 		<h1>
 			A Dyslexic Experience
 		</h1>
-		<button id="off">Turn off Aniimation</button>
+		<button id="off">Toggle Annimation</button>
+	</div>
+		
 
 		<p>Hi, my name is Nadia Batchelor, and I’m a graphic designer. I created this simulation to represent how I
 			experience dyslexia. I wanted to visualize some of my struggles, such as phonological processing and rapid
@@ -41,7 +43,11 @@
 
 		</p>
 
+		
+
 	</section>
+	
+
 	<video class="video_mobile" autoplay loop muted playsinline>
 		<source src="Assets/Dyslexia_mobile.mp4" type="video/mp4">
 		<source src="Assets/Dyslexia_mobile.webm" type="video/webm">
@@ -80,13 +86,15 @@
 		// created 3 varbiles - one hidden one for the video and one to turn in off 
 		// used and event lisener to select both video using brackts[0] and [1] to specify both 
 		// swiched them to display non on toggle click
-		let highlightClass = 'hidden' // “Strings” (like a class name) are wrapped in quotes.
+		const highlightClass = 'hidden' // “Strings” (like a class name) are wrapped in quotes.
 		let buttonVideo = document.querySelectorAll('video') // Any selector.
 		let switchButton = document.querySelector('#off')
 
 		switchButton.onclick = () => { // “Listen” for clicks.
 			console.log('hi')
+			// the first video
 			buttonVideo[0].classList.toggle(highlightClass) // Toggle the class!
+			// the second viddeo
 			buttonVideo[1].classList.toggle(highlightClass) // Toggle the class!
 		}
 	</script>
