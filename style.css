@@ -17,6 +17,12 @@ body {
 	padding: 20px;
 	background-color: var(--white);
 }
+#off {
+	font-family: "darkmode-on", sans-serif;
+	background: #11cb3b;
+
+	
+}
 
 /* section {
 	display: flex;
@@ -91,6 +97,10 @@ a {
 
 
 }
+.hidden{
+	display: none;
+}
+
 
 .video_mobile {
 	display: none;
@@ -218,6 +228,7 @@ a {
     background: linear-gradient(135deg, #11cb3b, #2dff00);
 	
 	}
+
 	
 
 

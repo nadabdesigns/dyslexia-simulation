@@ -9,7 +9,7 @@ html {
 	--h2: 24px;
 	--p: 20px;
 	--Black: #1E1919;
-	--white: #ecfffc;
+	--white: #f8fffe;
 	--green: #2dff00;
 	--magenta: #d200ff;
 
@@ -231,7 +231,7 @@ h5 {
 	border-radius: 100px;
 	background: var(--Black);
 	cursor: pointer;
-	border: 7px solid var(--magenta);
+	border: 7px solid var(--green);
 
 }
 

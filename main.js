@@ -32,6 +32,14 @@ let scSlider = document.getElementById("slider-sc")
 
 let riverSlider = document.getElementById("slider-river")
 
+
+// 
+// toggle button to display none annimation 
+// get the video
+// using querselector all to get all videos
+
+
+
 // REFRESH THE PAGE AFTER CLICKING A SECTION
 // getting leement by ID
 // this how you set up one function after another 
@@ -57,7 +65,6 @@ document.getElementById('reset').onclick = function() {
 
 
 
-// 
 
 
 

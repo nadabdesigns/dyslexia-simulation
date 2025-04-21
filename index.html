@@ -4,12 +4,11 @@
 <head>
 	<!-- reset -->
 	<link href="https://typography-interaction-2425.github.io/assets/reset.css" rel="stylesheet">
-	<link href="reset.css" rel="stylesheet">
+	<!-- <link href="reset.css" rel="stylesheet"> -->
 	<!-- viewport stuff -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link href="https://typography-interaction-2425.github.io/assets/reset.css" rel="stylesheet">
-	<link href="reset.css" rel="stylesheet">
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,6 +30,8 @@
 		<h1>
 			A Dyslexic Experience
 		</h1>
+		<button id="off">Turn off Aniimation</button>
+
 		<p>Hi, my name is Nadia Batchelor, and I’m a graphic designer. I created this simulation to represent how I
 			experience dyslexia. I wanted to visualize some of my struggles, such as phonological processing and rapid
 			naming speed. For me, this means I have difficulty both identifying the sounds in words (phonological
@@ -44,12 +45,12 @@
 	<video class="video_mobile" autoplay loop muted playsinline>
 		<source src="Assets/Dyslexia_mobile.mp4" type="video/mp4">
 		<source src="Assets/Dyslexia_mobile.webm" type="video/webm">
-	  </video>
-	  
-	  <video class="video_web" autoplay loop muted playsinline>
+	</video>
+
+	<video class="video_web" autoplay loop muted playsinline>
 		<source src="Assets/Dyslexia_web.mp4" type="video/mp4">
 		<source src="Assets/Dyslexia_web.webm" type="video/webm">
-	  </video>
+	</video>
 
 	<script>
 		// assign to an hml element
@@ -61,10 +62,10 @@
 
 	<!-- form on click -->
 	<!-- button after on click -->
-	 <div class="buttoncontainer">
-	<a href="Pages/simulation.html" class="button">Experience</a>
-	<!-- input type is a range ( you can also repace with text and range ,rang for slider) -->
-	 </div>
+	<div class="buttoncontainer">
+		<a href="Pages/simulation.html" class="button">Experience</a>
+		<!-- input type is a range ( you can also repace with text and range ,rang for slider) -->
+	</div>
 
 
 
@@ -74,7 +75,23 @@
 	<script src="Library/matter.js"></script>
 
 	<script src="sketch.js"></script>
+	<script defer>
+		// added defer so that it would play 
+		// created 3 varbiles - one hidden one for the video and one to turn in off 
+		// used and event lisener to select both video using brackts[0] and [1] to specify both 
+		// swiched them to display non on toggle click
+		let highlightClass = 'hidden' // “Strings” (like a class name) are wrapped in quotes.
+		let buttonVideo = document.querySelectorAll('video') // Any selector.
+		let switchButton = document.querySelector('#off')
+
+		switchButton.onclick = () => { // “Listen” for clicks.
+			console.log('hi')
+			buttonVideo[0].classList.toggle(highlightClass) // Toggle the class!
+			buttonVideo[1].classList.toggle(highlightClass) // Toggle the class!
+		}
+	</script>
 
 </body>
+
 
 </html>
