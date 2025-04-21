@@ -11,6 +11,8 @@ html {
 	--p: 20px;
 	--Black: #1E1919;
 	--white: #ecfffc;
+	--green: #2dff00;
+	--magenta: #d200ff;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
 	
 }
 .offAfterClick{
-	background-color: var(--m)!important; 
+	background-color: var(--magenta)!important; 
 
 }
 label{
