@@ -29,26 +29,26 @@ body {
 	align-content: center;
     height: 30px;
     width: 100px;
-    /* padding: 15px; */
+    
     justify-content: center;
-    /* align-items: center; */
+   
     gap: 15px;
 	flex-wrap: wrap;
     align-self: stretch;
     border-radius: 8px;
-    /* border: 5px solid var(--Black); */
+
     color: var(--Black);
     font-size: 8px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    mix-blend-mode: exclusion;
-    background: linear-gradient(135deg, #11cb3b, #2dff00);
+    background-color: var(--Black);
+	color: var(--white);
 	
 }
-.offAfterchlick{
-	background: linear-gradient(135deg, #3611cb, #2dff00);
+.offAfterClick{
+	background-color: var(--m)!important; 
 
 }
 label{
