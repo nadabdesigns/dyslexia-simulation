@@ -46,7 +46,7 @@
 			</h1>
 			<h1 id="mobile">Dyslexic <br><span>Experience</span></h1>
 			<div id="buttonDiv">
-				<button id="off">letters</button>
+				<button id="off">● . ◉</button>
 			</div>
 		</div>
 
@@ -108,6 +108,7 @@
 		let buttonVideo = document.querySelectorAll('video') // Any selector.
 		let switchButton = document.querySelector('#off')
 		const newButtonStyle = 'offAfterClick'
+		const changeText = document.querySelector("#change-text");
 
 		switchButton.onclick = () => { // “Listen” for clicks.
 
@@ -117,7 +118,23 @@
 			buttonVideo[1].classList.toggle(highlightClass) // Toggle the class!
 
 			// now for the button itself
+			// change style
+			// I looked up how to change text content with javascript I found the .textConent poperty in shecodes.
+			// === means it's checking to see if it's true
+			// basically toggling between the off off and on text
+			// https://www.shecodes.io/athena/10151-how-to-change-text-when-clicking-in-javascript#google_vignette
 			switchButton.classList.toggle(newButtonStyle)
+
+			if (switchButton.textContent === "Off") {
+				switchButton.textContent = "On";
+			} else {
+				switchButton.textContent = "Off";
+			}
+
+
+
+
+
 
 
 		}

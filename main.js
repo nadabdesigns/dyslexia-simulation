@@ -55,7 +55,7 @@ document.getElementById('reset').onclick = function() {
 	}, 700); 
   };
 
-//   hacky way to fix the back buton 
+//   hacky way to fix the back buton that is not a button
 
   document.getElementById('back').onclick = function () {
 	window.location.href = '../index.html';
