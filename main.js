@@ -52,7 +52,7 @@ document.getElementById('reset').onclick = function() {
 	setTimeout(() => {
 	  window.location.reload();
 	//   this is were it is delayed by .5 sec
-	}, 500); 
+	}, 700); 
   };
 
 //   hacky way to fix the back buton 

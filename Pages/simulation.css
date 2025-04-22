@@ -15,6 +15,12 @@ html {
 
 
 	--stroke: 2px;
+	--space5: 50px;
+
+	/* boarder radius */
+
+	--br1: 2px;
+	--br2: 3px;
 }
 
 
@@ -29,6 +35,7 @@ body {
 
 }
 
+
 /* big container with text */
 .textdiv {
 	display: flex;
@@ -41,15 +48,53 @@ body {
 	margin-bottom: 0px;
 	justify-content: space-between;
 }
+.moibile{
+	display: none;
+}
+#see{
+	font-family: "darkmode-on", sans-serif;
+	font-size: 20px;
+
+}
+.textdiv p{
+
+    font-family: darkmode-on;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    mix-blend-mode: difference;
+    color: var(--white);
+	position: absolute;
+    bottom: 50px;
+	padding-right: 40px;
+
+}
+
+
+#me{
+	font-family: "darkmode-on", sans-serif;
+	font-size: 100px;
+
+}
+#dyslexic{
+	font-family: "darkmode-on", sans-serif;
+	font-size: 20px;
+
+}
+.web {display: block;
+}
 
 #back {
 	background-color: var(--Black);
 	color: var(--white);
 	width: 30px;
 	height: 30px;
-	border-radius: var(--stroke);
+	border-radius: var(--br1);
 	align-self: flex-start;
 }
+
 
 h1 {
 
@@ -58,8 +103,9 @@ h1 {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	max-width: 700px;
+	padding-right: 20px;
 
 	/* color: var(--white); */
 
@@ -106,7 +152,7 @@ form {
 	font-style: normal;
 	font-weight: 700;
 	/* line-height: normal; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 
 	/* background: linear-gradient(135deg, #11cb3b, #2dff00); */
 	border-radius: 5px;
@@ -190,7 +236,7 @@ form {
 
 h5 {
 	text-align: center;
-	color: #1E1919;
+	color: var(--Black);
 
 	text-align: center;
 	font-family: Darkmode;
@@ -226,8 +272,8 @@ h5 {
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	border-radius: 100px;
 	background: var(--Black);
 	cursor: pointer;
@@ -267,6 +313,12 @@ p {
 	mix-blend-mode: difference;
 	color: var(--white);
 }
+#reset{
+	font-family: 'darkmode-on';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 
@@ -292,7 +344,7 @@ p {
 	flex: 1 0 0;
 	align-self: stretch;
 	color: var(--Black);
-	border: 2px dotted black;
+	border: 2px dotted var(--Black);
 	/* white-space: pre-wrap; */
 	max-width: 100%;
 	overflow-x: scroll;
@@ -321,7 +373,7 @@ p {
 	font-style: normal;
 	font-weight: 700;
 	/* line-height: normal; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	/* background-color: #180606; */
 	border-radius: 5px;
 	/* border: 1px solid #d0ff00; */
@@ -333,7 +385,7 @@ p {
 }
 
 button {
-	height: 10px;
+	height: 30px;
 
 	display: flex;
 	padding: 15px;
@@ -439,7 +491,7 @@ h3 {
 	button {
 
 		background-color: var(--white);
-		/* width: 200px; */
+		height: 60px;
 	}
 
 	h1 {
@@ -484,10 +536,15 @@ h3 {
 		display: flex;
 		height: 100vh;
 		background-color: var(--Black);
-		margin-bottom: 90px;
+		/* margin-bottom: 90px; */
 		flex-direction: column;
 		justify-content: flex-start;
 		gap: 10vh;
+	}
+	.web {display: none;
+	}
+	.moibile{
+		display: block;
 	}
 
 	#back {
@@ -512,6 +569,13 @@ h3 {
 	.leftDiv {
 		background-color: var(--white);
 	}
+	#slider-ft,
+#slider-sc,
+#slider-river {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
 
 	.rightDiv {
 		width: 100%;
@@ -569,6 +633,11 @@ h3 {
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+	}
+	.slider{
+		margin-bottom: 70px;
+		margin-top: 70px;
+		gap: 20px;
 	}
 
 }
