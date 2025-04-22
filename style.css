@@ -17,6 +17,7 @@ html {
 
 #mobile {
 	display: none;
+	text-align: start;
 
 }
 
@@ -42,7 +43,8 @@ body {
 	flex-direction: column;
 	align-content: center;
 	height: 40px;
-	width: 100px;
+	width: 60px;
+	
 
 	justify-content: center;
 
@@ -195,10 +197,14 @@ a {
 		font-size: 30px;
 		/* text-transform: capitalize; */
 		/* font-weight: 900; */
+		text-align: center
 	}
 
 	.hidden {
 		display: none;
+	}
+	p {
+		font-size: 20px;
 	}
 
 
@@ -210,7 +216,7 @@ a {
 @media screen and (max-width: 600px) {
 	.headingDiv {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.video_web {
@@ -220,7 +226,12 @@ a {
 	#mobile {
 		display: block;
 		text-transform: uppercase;
+		font-size: 50px;
+		
 
+	}
+	#buttonDiv{
+		display: flex;
 	}
 
 	#web {
@@ -228,7 +239,7 @@ a {
 	}
 
 	span {
-		font-size: 20px;
+		font-size: 39px;
 	}
 
 	.video_mobile {
@@ -296,7 +307,7 @@ a {
 		z-index: -1;
 		right: 30px;
 		left: 5px;
-		/* top: 0vh; */
+		top: 10vh;
 	}
 
 	/* .video_web {
