@@ -54,7 +54,7 @@ document.getElementById('reset').onclick = function() {
 	}
 	setTimeout(() => {
 	  window.location.reload();
-	//   this is were it is delayed by .5 sec
+	//   this is were it is delayed by .7 sec
 	}, 700); 
   };
 
@@ -70,7 +70,7 @@ document.getElementById('reset').onclick = function() {
 
 
 
-
+// Went to a coder tutor , Viyan Poonamallee, they told me about Math.round it takesthe value of a number and rounds it to the nearet integer
 // SLIDER VALES
 // display slider info
 // create a varible ftValueDisplay and assign it to the slider ft value
@@ -98,8 +98,8 @@ riverSlider.addEventListener("input", () => {
   });
 
 
-
-// targeting varbile just made for the event lister input and we are chaanging that data to  
+//   Went to a coder tutor i've used math.random and for loops before in my computational form class using p5js but Viyan Poonamallee, they told me about Math.round
+// targeting varbile just made for the event lister input and we are chaanging that data 
 input.addEventListener("input", updateValue);
 // (e)is the event and we're grabbing the text and spiting it out (later)
 function updateValue(e) {
@@ -112,6 +112,8 @@ function updateValue(e) {
 	let textReplace = "";
 	for (let i = 0; i < letterchage.length; i++) {
 
+// radom determins if a letter is swapped 
+// if the randome value is less than the slider value then it will swap 
 
 
 		if (Math.random() < ftSlider.value) {
@@ -145,6 +147,7 @@ function updateValue(e) {
 				textReplace = textReplace + 's';
 
 			}
+			// if neither of these run then use the same letter
 			else {
 				textReplace = textReplace + letterchage[i];
 			}
@@ -176,6 +179,7 @@ function updateValue(e) {
 			// geta a value for 0 and 1 and see if it's a value for .5 
 
 		}
+		// OLD NOTES
 		//  block of code to be executed if the condition is false
 
 		// make a slider and choose probablity from .0 to .9
@@ -197,14 +201,14 @@ function updateValue(e) {
 	}
 
 
-
+// 
 	// goining into the log and seeing what the text content is
 	output.innerHTML = textReplace
 
 	
 }
 
-
+	// OLD NOTES
 // add a scroll to funtion
 
 // scrool to the top of the page after button is clicked
