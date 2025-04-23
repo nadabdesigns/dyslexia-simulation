@@ -97,47 +97,9 @@
 	<script src="Library/p5.js"></script>
 	<script src="Library/matter.js"></script>
 
-	<script src="sketch.js"></script>
-	<script defer>
-		// added defer so that it would play 
-		// created 3 varbiles - one hidden one for the video and one to turn in off 
-		// used and event lisener to select both video using brackts[0] and [1] to specify both 
-		// swiched them to display non on toggle click
-
-		const highlightClass = 'hidden' // “Strings” (like a class name) are wrapped in quotes.
-		let buttonVideo = document.querySelectorAll('video') // Any selector.
-		let switchButton = document.querySelector('#off')
-		const newButtonStyle = 'offAfterClick'
-		const changeText = document.querySelector("#change-text");
-
-		switchButton.onclick = () => { // “Listen” for clicks.
-
-			// the first video
-			buttonVideo[0].classList.toggle(highlightClass) // Toggle the class!
-			// the second viddeo
-			buttonVideo[1].classList.toggle(highlightClass) // Toggle the class!
-
-			// now for the button itself
-			// change style
-			// I looked up how to change text content with javascript I found the .textConent poperty in shecodes.
-			// === means it's checking to see if it's true
-			// basically toggling between the off off and on text
-			// https://www.shecodes.io/athena/10151-how-to-change-text-when-clicking-in-javascript#google_vignette
-			switchButton.classList.toggle(newButtonStyle)
-
-			if (switchButton.textContent === "Off") {
-				switchButton.textContent = "On";
-			} else {
-				switchButton.textContent = "Off";
-			}
-
-
-
-
-
-
-
-		}
+	<script src="firstpage.js"></script>
+	
+	<script defer>	
 	</script>
 
 </body>

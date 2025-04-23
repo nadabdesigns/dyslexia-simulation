@@ -33,6 +33,9 @@ let scSlider = document.getElementById("slider-sc")
 let riverSlider = document.getElementById("slider-river")
 
 
+
+
+
 // 
 // toggle button to display none annimation 
 // get the video
@@ -200,6 +203,8 @@ function updateValue(e) {
 
 	
 }
+
+
 // add a scroll to funtion
 
 // scrool to the top of the page after button is clicked
